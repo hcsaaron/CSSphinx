@@ -1,4 +1,4 @@
-Pod::s.new do |s|
+Pod::Spec.new do |s|
   s.name         = "CSSphinx"
   s.version      = "0.0.1"
   s.summary      = "基于Pocketsphinx的本地语音识别、语音唤醒"
