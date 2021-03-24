@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022DE2B8260A492000400162 /* model in Resources */ = {isa = PBXBuildFile; fileRef = 022DE2B7260A492000400162 /* model */; };
+		933F9A512562652900442820 /* CSSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F9A502562652900442820 /* CSSpeechViewController.m */; };
+		933F9A56256265BB00442820 /* CSLanguageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 933F9A54256265BB00442820 /* CSLanguageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		933F9A57256265BB00442820 /* CSLanguageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F9A55256265BB00442820 /* CSLanguageModel.m */; };
+		933F9A6325626D3800442820 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 933F9A6225626D3800442820 /* Audio */; };
+		935684D8255CD09900819EF1 /* CSSphinx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935684CE255CD09900819EF1 /* CSSphinx.framework */; };
+		935684DD255CD09900819EF1 /* CSSphinxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 935684DC255CD09900819EF1 /* CSSphinxTests.m */; };
+		935684DF255CD09900819EF1 /* CSSphinx.h in Headers */ = {isa = PBXBuildFile; fileRef = 935684D1255CD09900819EF1 /* CSSphinx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		935684F2255CD0AD00819EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 935684F1255CD0AD00819EF1 /* AppDelegate.m */; };
+		935684FB255CD0AD00819EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935684F9255CD0AD00819EF1 /* Main.storyboard */; };
+		935684FD255CD0AF00819EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935684FC255CD0AF00819EF1 /* Assets.xcassets */; };
+		93568500255CD0AF00819EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935684FE255CD0AF00819EF1 /* LaunchScreen.storyboard */; };
+		93568503255CD0AF00819EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93568502255CD0AF00819EF1 /* main.m */; };
+		935685D1255CD20D00819EF1 /* pio.h in Headers */ = {isa = PBXBuildFile; fileRef = 9356859F255CD20D00819EF1 /* pio.h */; };
+		935685D2255CD20D00819EF1 /* yin.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A0255CD20D00819EF1 /* yin.h */; };
+		935685D3255CD20D00819EF1 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A1255CD20D00819EF1 /* err.h */; };
+		935685D4255CD20D00819EF1 /* glist.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A2255CD20D00819EF1 /* glist.h */; };
+		935685D5255CD20D00819EF1 /* sphinxbase_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A3255CD20D00819EF1 /* sphinxbase_export.h */; };
+		935685D6255CD20D00819EF1 /* f2c.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A4255CD20D00819EF1 /* f2c.h */; };
+		935685D7255CD20D00819EF1 /* profile.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A5255CD20D00819EF1 /* profile.h */; };
+		935685D8255CD20D00819EF1 /* listelem_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A6255CD20D00819EF1 /* listelem_alloc.h */; };
+		935685D9255CD20D00819EF1 /* byteorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A7255CD20D00819EF1 /* byteorder.h */; };
+		935685DA255CD20D00819EF1 /* mmio.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A8255CD20D00819EF1 /* mmio.h */; };
+		935685DB255CD20D00819EF1 /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685A9255CD20D00819EF1 /* bio.h */; };
+		935685DC255CD20D00819EF1 /* fixpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685AA255CD20D00819EF1 /* fixpoint.h */; };
+		935685DD255CD20D00819EF1 /* fsg_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685AB255CD20D00819EF1 /* fsg_model.h */; };
+		935685DE255CD20D00819EF1 /* prim_type.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685AC255CD20D00819EF1 /* prim_type.h */; };
+		935685DF255CD20D00819EF1 /* genrand.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685AD255CD20D00819EF1 /* genrand.h */; };
+		935685E0255CD20D00819EF1 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685AE255CD20D00819EF1 /* matrix.h */; };
+		935685E1255CD20D00819EF1 /* priority_queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685AF255CD20D00819EF1 /* priority_queue.h */; };
+		935685E2255CD20D00819EF1 /* feat.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B0255CD20D00819EF1 /* feat.h */; };
+		935685E3255CD20D00819EF1 /* hash_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B1255CD20D00819EF1 /* hash_table.h */; };
+		935685E4255CD20D00819EF1 /* jsgf.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B2255CD20D00819EF1 /* jsgf.h */; };
+		935685E5255CD20D00819EF1 /* strfuncs.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B3255CD20D00819EF1 /* strfuncs.h */; };
+		935685E6255CD20D00819EF1 /* ngram_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B4255CD20D00819EF1 /* ngram_model.h */; };
+		935685E7255CD20D00819EF1 /* clapack_lite.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B5255CD20D00819EF1 /* clapack_lite.h */; };
+		935685E8255CD20D00819EF1 /* cmd_ln.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B6255CD20D00819EF1 /* cmd_ln.h */; };
+		935685E9255CD20D00819EF1 /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B7255CD20D00819EF1 /* heap.h */; };
+		935685EA255CD20D00819EF1 /* fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B8255CD20D00819EF1 /* fe.h */; };
+		935685EB255CD20D00819EF1 /* case.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685B9255CD20D00819EF1 /* case.h */; };
+		935685EC255CD20D00819EF1 /* bitvec.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685BA255CD20D00819EF1 /* bitvec.h */; };
+		935685ED255CD20D00819EF1 /* bitarr.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685BB255CD20D00819EF1 /* bitarr.h */; };
+		935685EE255CD20D00819EF1 /* filename.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685BC255CD20D00819EF1 /* filename.h */; };
+		935685EF255CD20D00819EF1 /* cmn.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685BD255CD20D00819EF1 /* cmn.h */; };
+		935685F0255CD20D00819EF1 /* logmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685BE255CD20D00819EF1 /* logmath.h */; };
+		935685F1255CD20D00819EF1 /* sbthread.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685BF255CD20D00819EF1 /* sbthread.h */; };
+		935685F2255CD20D00819EF1 /* agc.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C0255CD20D00819EF1 /* agc.h */; };
+		935685F3255CD20D00819EF1 /* sphinx_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C1255CD20D00819EF1 /* sphinx_config.h */; };
+		935685F4255CD20D00819EF1 /* ad.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C2255CD20D00819EF1 /* ad.h */; };
+		935685F5255CD20D00819EF1 /* ckd_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C3255CD20D00819EF1 /* ckd_alloc.h */; };
+		935685F6255CD20D00819EF1 /* ps_search.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C5255CD20D00819EF1 /* ps_search.h */; };
+		935685F7255CD20D00819EF1 /* pocketsphinx_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C6255CD20D00819EF1 /* pocketsphinx_export.h */; };
+		935685F8255CD20D00819EF1 /* cmdln_macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C7255CD20D00819EF1 /* cmdln_macro.h */; };
+		935685F9255CD20D00819EF1 /* ps_mllr.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C8255CD20D00819EF1 /* ps_mllr.h */; };
+		935685FA255CD20D00819EF1 /* ps_lattice.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685C9255CD20D00819EF1 /* ps_lattice.h */; };
+		935685FB255CD20D00819EF1 /* pocketsphinx.h in Headers */ = {isa = PBXBuildFile; fileRef = 935685CA255CD20D00819EF1 /* pocketsphinx.h */; };
+		935685FC255CD20D00819EF1 /* libsphinxbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 935685CD255CD20D00819EF1 /* libsphinxbase.a */; };
+		935685FE255CD20D00819EF1 /* libpocketsphinx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 935685D0255CD20D00819EF1 /* libpocketsphinx.a */; };
+		9356863B255CD8A000819EF1 /* CSSphinxDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 93568639255CD8A000819EF1 /* CSSphinxDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9356863C255CD8A000819EF1 /* CSSphinxDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356863A255CD8A000819EF1 /* CSSphinxDecoder.m */; };
+		93568642255D045800819EF1 /* CSHypothesis.h in Headers */ = {isa = PBXBuildFile; fileRef = 93568640255D045800819EF1 /* CSHypothesis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93568643255D045800819EF1 /* CSHypothesis.m in Sources */ = {isa = PBXBuildFile; fileRef = 93568641255D045800819EF1 /* CSHypothesis.m */; };
+		9356867A255D15E800819EF1 /* CSSphinx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935684CE255CD09900819EF1 /* CSSphinx.framework */; };
+		9356867B255D15E800819EF1 /* CSSphinx.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 935684CE255CD09900819EF1 /* CSSphinx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		93568689255D16F600819EF1 /* CSSpeechRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 93568687255D16F600819EF1 /* CSSpeechRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9356868A255D16F600819EF1 /* CSSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93568688255D16F600819EF1 /* CSSpeechRecognizer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		935684D9255CD09900819EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 935684C5255CD09900819EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 935684CD255CD09900819EF1;
+			remoteInfo = CSSphinx;
+		};
+		9356867C255D15E800819EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 935684C5255CD09900819EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 935684CD255CD09900819EF1;
+			remoteInfo = CSSphinx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9356867E255D15E800819EF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9356867B255D15E800819EF1 /* CSSphinx.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		022DE2B7260A492000400162 /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = "<group>"; };
+		933F9A4F2562652900442820 /* CSSpeechViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSpeechViewController.h; sourceTree = "<group>"; };
+		933F9A502562652900442820 /* CSSpeechViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSpeechViewController.m; sourceTree = "<group>"; };
+		933F9A54256265BB00442820 /* CSLanguageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSLanguageModel.h; sourceTree = "<group>"; };
+		933F9A55256265BB00442820 /* CSLanguageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSLanguageModel.m; sourceTree = "<group>"; };
+		933F9A6225626D3800442820 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		935684CE255CD09900819EF1 /* CSSphinx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSSphinx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		935684D1255CD09900819EF1 /* CSSphinx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSphinx.h; sourceTree = "<group>"; };
+		935684D2255CD09900819EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935684D7255CD09900819EF1 /* CSSphinxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSSphinxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		935684DC255CD09900819EF1 /* CSSphinxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSphinxTests.m; sourceTree = "<group>"; };
+		935684DE255CD09900819EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		935684EE255CD0AD00819EF1 /* CSSphinxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSphinxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		935684F0255CD0AD00819EF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		935684F1255CD0AD00819EF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		935684FA255CD0AD00819EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		935684FC255CD0AF00819EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		935684FF255CD0AF00819EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93568501255CD0AF00819EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93568502255CD0AF00819EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9356859F255CD20D00819EF1 /* pio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pio.h; sourceTree = "<group>"; };
+		935685A0255CD20D00819EF1 /* yin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yin.h; sourceTree = "<group>"; };
+		935685A1255CD20D00819EF1 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		935685A2255CD20D00819EF1 /* glist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glist.h; sourceTree = "<group>"; };
+		935685A3255CD20D00819EF1 /* sphinxbase_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphinxbase_export.h; sourceTree = "<group>"; };
+		935685A4255CD20D00819EF1 /* f2c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = f2c.h; sourceTree = "<group>"; };
+		935685A5255CD20D00819EF1 /* profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profile.h; sourceTree = "<group>"; };
+		935685A6255CD20D00819EF1 /* listelem_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listelem_alloc.h; sourceTree = "<group>"; };
+		935685A7255CD20D00819EF1 /* byteorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byteorder.h; sourceTree = "<group>"; };
+		935685A8255CD20D00819EF1 /* mmio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmio.h; sourceTree = "<group>"; };
+		935685A9255CD20D00819EF1 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		935685AA255CD20D00819EF1 /* fixpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fixpoint.h; sourceTree = "<group>"; };
+		935685AB255CD20D00819EF1 /* fsg_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fsg_model.h; sourceTree = "<group>"; };
+		935685AC255CD20D00819EF1 /* prim_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prim_type.h; sourceTree = "<group>"; };
+		935685AD255CD20D00819EF1 /* genrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genrand.h; sourceTree = "<group>"; };
+		935685AE255CD20D00819EF1 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		935685AF255CD20D00819EF1 /* priority_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = priority_queue.h; sourceTree = "<group>"; };
+		935685B0255CD20D00819EF1 /* feat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feat.h; sourceTree = "<group>"; };
+		935685B1255CD20D00819EF1 /* hash_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_table.h; sourceTree = "<group>"; };
+		935685B2255CD20D00819EF1 /* jsgf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsgf.h; sourceTree = "<group>"; };
+		935685B3255CD20D00819EF1 /* strfuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfuncs.h; sourceTree = "<group>"; };
+		935685B4255CD20D00819EF1 /* ngram_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ngram_model.h; sourceTree = "<group>"; };
+		935685B5255CD20D00819EF1 /* clapack_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clapack_lite.h; sourceTree = "<group>"; };
+		935685B6255CD20D00819EF1 /* cmd_ln.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd_ln.h; sourceTree = "<group>"; };
+		935685B7255CD20D00819EF1 /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
+		935685B8255CD20D00819EF1 /* fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fe.h; sourceTree = "<group>"; };
+		935685B9255CD20D00819EF1 /* case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = case.h; sourceTree = "<group>"; };
+		935685BA255CD20D00819EF1 /* bitvec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitvec.h; sourceTree = "<group>"; };
+		935685BB255CD20D00819EF1 /* bitarr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitarr.h; sourceTree = "<group>"; };
+		935685BC255CD20D00819EF1 /* filename.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filename.h; sourceTree = "<group>"; };
+		935685BD255CD20D00819EF1 /* cmn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmn.h; sourceTree = "<group>"; };
+		935685BE255CD20D00819EF1 /* logmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logmath.h; sourceTree = "<group>"; };
+		935685BF255CD20D00819EF1 /* sbthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sbthread.h; sourceTree = "<group>"; };
+		935685C0255CD20D00819EF1 /* agc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agc.h; sourceTree = "<group>"; };
+		935685C1255CD20D00819EF1 /* sphinx_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphinx_config.h; sourceTree = "<group>"; };
+		935685C2255CD20D00819EF1 /* ad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ad.h; sourceTree = "<group>"; };
+		935685C3255CD20D00819EF1 /* ckd_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ckd_alloc.h; sourceTree = "<group>"; };
+		935685C5255CD20D00819EF1 /* ps_search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ps_search.h; sourceTree = "<group>"; };
+		935685C6255CD20D00819EF1 /* pocketsphinx_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pocketsphinx_export.h; sourceTree = "<group>"; };
+		935685C7255CD20D00819EF1 /* cmdln_macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmdln_macro.h; sourceTree = "<group>"; };
+		935685C8255CD20D00819EF1 /* ps_mllr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ps_mllr.h; sourceTree = "<group>"; };
+		935685C9255CD20D00819EF1 /* ps_lattice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ps_lattice.h; sourceTree = "<group>"; };
+		935685CA255CD20D00819EF1 /* pocketsphinx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pocketsphinx.h; sourceTree = "<group>"; };
+		935685CD255CD20D00819EF1 /* libsphinxbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsphinxbase.a; sourceTree = "<group>"; };
+		935685D0255CD20D00819EF1 /* libpocketsphinx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpocketsphinx.a; sourceTree = "<group>"; };
+		93568639255CD8A000819EF1 /* CSSphinxDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSphinxDecoder.h; sourceTree = "<group>"; };
+		9356863A255CD8A000819EF1 /* CSSphinxDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSphinxDecoder.m; sourceTree = "<group>"; };
+		93568640255D045800819EF1 /* CSHypothesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSHypothesis.h; sourceTree = "<group>"; };
+		93568641255D045800819EF1 /* CSHypothesis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSHypothesis.m; sourceTree = "<group>"; };
+		93568687255D16F600819EF1 /* CSSpeechRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSpeechRecognizer.h; sourceTree = "<group>"; };
+		93568688255D16F600819EF1 /* CSSpeechRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSSpeechRecognizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		935684CB255CD09900819EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935685FE255CD20D00819EF1 /* libpocketsphinx.a in Frameworks */,
+				935685FC255CD20D00819EF1 /* libsphinxbase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935684D4255CD09900819EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935684D8255CD09900819EF1 /* CSSphinx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935684EB255CD0AD00819EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9356867A255D15E800819EF1 /* CSSphinx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		935684C4255CD09900819EF1 = {
+			isa = PBXGroup;
+			children = (
+				935684EF255CD0AD00819EF1 /* CSSphinxExample */,
+				935684D0255CD09900819EF1 /* CSSphinx */,
+				935684DB255CD09900819EF1 /* CSSphinxTests */,
+				935684CF255CD09900819EF1 /* Products */,
+				9356864A255D14D500819EF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		935684CF255CD09900819EF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				935684CE255CD09900819EF1 /* CSSphinx.framework */,
+				935684D7255CD09900819EF1 /* CSSphinxTests.xctest */,
+				935684EE255CD0AD00819EF1 /* CSSphinxExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		935684D0255CD09900819EF1 /* CSSphinx */ = {
+			isa = PBXGroup;
+			children = (
+				935684D1255CD09900819EF1 /* CSSphinx.h */,
+				93568687255D16F600819EF1 /* CSSpeechRecognizer.h */,
+				93568688255D16F600819EF1 /* CSSpeechRecognizer.m */,
+				93568639255CD8A000819EF1 /* CSSphinxDecoder.h */,
+				9356863A255CD8A000819EF1 /* CSSphinxDecoder.m */,
+				93568640255D045800819EF1 /* CSHypothesis.h */,
+				93568641255D045800819EF1 /* CSHypothesis.m */,
+				933F9A54256265BB00442820 /* CSLanguageModel.h */,
+				933F9A55256265BB00442820 /* CSLanguageModel.m */,
+				9356859C255CD20D00819EF1 /* Sphinx */,
+				935684D2255CD09900819EF1 /* Info.plist */,
+			);
+			path = CSSphinx;
+			sourceTree = "<group>";
+		};
+		935684DB255CD09900819EF1 /* CSSphinxTests */ = {
+			isa = PBXGroup;
+			children = (
+				935684DC255CD09900819EF1 /* CSSphinxTests.m */,
+				935684DE255CD09900819EF1 /* Info.plist */,
+			);
+			path = CSSphinxTests;
+			sourceTree = "<group>";
+		};
+		935684EF255CD0AD00819EF1 /* CSSphinxExample */ = {
+			isa = PBXGroup;
+			children = (
+				935684F0255CD0AD00819EF1 /* AppDelegate.h */,
+				935684F1255CD0AD00819EF1 /* AppDelegate.m */,
+				933F9A4F2562652900442820 /* CSSpeechViewController.h */,
+				933F9A502562652900442820 /* CSSpeechViewController.m */,
+				022DE2B7260A492000400162 /* model */,
+				933F9A6225626D3800442820 /* Audio */,
+				935684F9255CD0AD00819EF1 /* Main.storyboard */,
+				935684FC255CD0AF00819EF1 /* Assets.xcassets */,
+				935684FE255CD0AF00819EF1 /* LaunchScreen.storyboard */,
+				93568501255CD0AF00819EF1 /* Info.plist */,
+				93568502255CD0AF00819EF1 /* main.m */,
+			);
+			path = CSSphinxExample;
+			sourceTree = "<group>";
+		};
+		9356859C255CD20D00819EF1 /* Sphinx */ = {
+			isa = PBXGroup;
+			children = (
+				9356859D255CD20D00819EF1 /* include */,
+				935685CB255CD20D00819EF1 /* lib */,
+			);
+			path = Sphinx;
+			sourceTree = "<group>";
+		};
+		9356859D255CD20D00819EF1 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9356859E255CD20D00819EF1 /* sphinxbase */,
+				935685C4255CD20D00819EF1 /* pocketsphinx */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9356859E255CD20D00819EF1 /* sphinxbase */ = {
+			isa = PBXGroup;
+			children = (
+				9356859F255CD20D00819EF1 /* pio.h */,
+				935685A0255CD20D00819EF1 /* yin.h */,
+				935685A1255CD20D00819EF1 /* err.h */,
+				935685A2255CD20D00819EF1 /* glist.h */,
+				935685A3255CD20D00819EF1 /* sphinxbase_export.h */,
+				935685A4255CD20D00819EF1 /* f2c.h */,
+				935685A5255CD20D00819EF1 /* profile.h */,
+				935685A6255CD20D00819EF1 /* listelem_alloc.h */,
+				935685A7255CD20D00819EF1 /* byteorder.h */,
+				935685A8255CD20D00819EF1 /* mmio.h */,
+				935685A9255CD20D00819EF1 /* bio.h */,
+				935685AA255CD20D00819EF1 /* fixpoint.h */,
+				935685AB255CD20D00819EF1 /* fsg_model.h */,
+				935685AC255CD20D00819EF1 /* prim_type.h */,
+				935685AD255CD20D00819EF1 /* genrand.h */,
+				935685AE255CD20D00819EF1 /* matrix.h */,
+				935685AF255CD20D00819EF1 /* priority_queue.h */,
+				935685B0255CD20D00819EF1 /* feat.h */,
+				935685B1255CD20D00819EF1 /* hash_table.h */,
+				935685B2255CD20D00819EF1 /* jsgf.h */,
+				935685B3255CD20D00819EF1 /* strfuncs.h */,
+				935685B4255CD20D00819EF1 /* ngram_model.h */,
+				935685B5255CD20D00819EF1 /* clapack_lite.h */,
+				935685B6255CD20D00819EF1 /* cmd_ln.h */,
+				935685B7255CD20D00819EF1 /* heap.h */,
+				935685B8255CD20D00819EF1 /* fe.h */,
+				935685B9255CD20D00819EF1 /* case.h */,
+				935685BA255CD20D00819EF1 /* bitvec.h */,
+				935685BB255CD20D00819EF1 /* bitarr.h */,
+				935685BC255CD20D00819EF1 /* filename.h */,
+				935685BD255CD20D00819EF1 /* cmn.h */,
+				935685BE255CD20D00819EF1 /* logmath.h */,
+				935685BF255CD20D00819EF1 /* sbthread.h */,
+				935685C0255CD20D00819EF1 /* agc.h */,
+				935685C1255CD20D00819EF1 /* sphinx_config.h */,
+				935685C2255CD20D00819EF1 /* ad.h */,
+				935685C3255CD20D00819EF1 /* ckd_alloc.h */,
+			);
+			path = sphinxbase;
+			sourceTree = "<group>";
+		};
+		935685C4255CD20D00819EF1 /* pocketsphinx */ = {
+			isa = PBXGroup;
+			children = (
+				935685C5255CD20D00819EF1 /* ps_search.h */,
+				935685C6255CD20D00819EF1 /* pocketsphinx_export.h */,
+				935685C7255CD20D00819EF1 /* cmdln_macro.h */,
+				935685C8255CD20D00819EF1 /* ps_mllr.h */,
+				935685C9255CD20D00819EF1 /* ps_lattice.h */,
+				935685CA255CD20D00819EF1 /* pocketsphinx.h */,
+			);
+			path = pocketsphinx;
+			sourceTree = "<group>";
+		};
+		935685CB255CD20D00819EF1 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				935685CC255CD20D00819EF1 /* sphinxbase */,
+				935685CF255CD20D00819EF1 /* pocketsphinx */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		935685CC255CD20D00819EF1 /* sphinxbase */ = {
+			isa = PBXGroup;
+			children = (
+				935685CD255CD20D00819EF1 /* libsphinxbase.a */,
+			);
+			path = sphinxbase;
+			sourceTree = "<group>";
+		};
+		935685CF255CD20D00819EF1 /* pocketsphinx */ = {
+			isa = PBXGroup;
+			children = (
+				935685D0255CD20D00819EF1 /* libpocketsphinx.a */,
+			);
+			path = pocketsphinx;
+			sourceTree = "<group>";
+		};
+		9356864A255D14D500819EF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		935684C9255CD09900819EF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935684DF255CD09900819EF1 /* CSSphinx.h in Headers */,
+				935685FB255CD20D00819EF1 /* pocketsphinx.h in Headers */,
+				9356863B255CD8A000819EF1 /* CSSphinxDecoder.h in Headers */,
+				933F9A56256265BB00442820 /* CSLanguageModel.h in Headers */,
+				93568642255D045800819EF1 /* CSHypothesis.h in Headers */,
+				93568689255D16F600819EF1 /* CSSpeechRecognizer.h in Headers */,
+				935685E9255CD20D00819EF1 /* heap.h in Headers */,
+				935685D8255CD20D00819EF1 /* listelem_alloc.h in Headers */,
+				935685D7255CD20D00819EF1 /* profile.h in Headers */,
+				935685EE255CD20D00819EF1 /* filename.h in Headers */,
+				935685E0255CD20D00819EF1 /* matrix.h in Headers */,
+				935685EB255CD20D00819EF1 /* case.h in Headers */,
+				935685E4255CD20D00819EF1 /* jsgf.h in Headers */,
+				935685ED255CD20D00819EF1 /* bitarr.h in Headers */,
+				935685F8255CD20D00819EF1 /* cmdln_macro.h in Headers */,
+				935685D3255CD20D00819EF1 /* err.h in Headers */,
+				935685D2255CD20D00819EF1 /* yin.h in Headers */,
+				935685E3255CD20D00819EF1 /* hash_table.h in Headers */,
+				935685F4255CD20D00819EF1 /* ad.h in Headers */,
+				935685F7255CD20D00819EF1 /* pocketsphinx_export.h in Headers */,
+				935685D4255CD20D00819EF1 /* glist.h in Headers */,
+				935685F3255CD20D00819EF1 /* sphinx_config.h in Headers */,
+				935685D5255CD20D00819EF1 /* sphinxbase_export.h in Headers */,
+				935685DA255CD20D00819EF1 /* mmio.h in Headers */,
+				935685E5255CD20D00819EF1 /* strfuncs.h in Headers */,
+				935685F5255CD20D00819EF1 /* ckd_alloc.h in Headers */,
+				935685F1255CD20D00819EF1 /* sbthread.h in Headers */,
+				935685D6255CD20D00819EF1 /* f2c.h in Headers */,
+				935685DB255CD20D00819EF1 /* bio.h in Headers */,
+				935685F2255CD20D00819EF1 /* agc.h in Headers */,
+				935685E6255CD20D00819EF1 /* ngram_model.h in Headers */,
+				935685F0255CD20D00819EF1 /* logmath.h in Headers */,
+				935685D1255CD20D00819EF1 /* pio.h in Headers */,
+				935685E7255CD20D00819EF1 /* clapack_lite.h in Headers */,
+				935685FA255CD20D00819EF1 /* ps_lattice.h in Headers */,
+				935685DE255CD20D00819EF1 /* prim_type.h in Headers */,
+				935685EC255CD20D00819EF1 /* bitvec.h in Headers */,
+				935685E8255CD20D00819EF1 /* cmd_ln.h in Headers */,
+				935685F9255CD20D00819EF1 /* ps_mllr.h in Headers */,
+				935685DD255CD20D00819EF1 /* fsg_model.h in Headers */,
+				935685F6255CD20D00819EF1 /* ps_search.h in Headers */,
+				935685EF255CD20D00819EF1 /* cmn.h in Headers */,
+				935685E1255CD20D00819EF1 /* priority_queue.h in Headers */,
+				935685E2255CD20D00819EF1 /* feat.h in Headers */,
+				935685DC255CD20D00819EF1 /* fixpoint.h in Headers */,
+				935685EA255CD20D00819EF1 /* fe.h in Headers */,
+				935685DF255CD20D00819EF1 /* genrand.h in Headers */,
+				935685D9255CD20D00819EF1 /* byteorder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		935684CD255CD09900819EF1 /* CSSphinx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935684E2255CD09900819EF1 /* Build configuration list for PBXNativeTarget "CSSphinx" */;
+			buildPhases = (
+				935684C9255CD09900819EF1 /* Headers */,
+				935684CA255CD09900819EF1 /* Sources */,
+				935684CB255CD09900819EF1 /* Frameworks */,
+				935684CC255CD09900819EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSSphinx;
+			productName = CSSphinx;
+			productReference = 935684CE255CD09900819EF1 /* CSSphinx.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		935684D6255CD09900819EF1 /* CSSphinxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 935684E5255CD09900819EF1 /* Build configuration list for PBXNativeTarget "CSSphinxTests" */;
+			buildPhases = (
+				935684D3255CD09900819EF1 /* Sources */,
+				935684D4255CD09900819EF1 /* Frameworks */,
+				935684D5255CD09900819EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935684DA255CD09900819EF1 /* PBXTargetDependency */,
+			);
+			name = CSSphinxTests;
+			productName = CSSphinxTests;
+			productReference = 935684D7255CD09900819EF1 /* CSSphinxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		935684ED255CD0AD00819EF1 /* CSSphinxExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93568504255CD0AF00819EF1 /* Build configuration list for PBXNativeTarget "CSSphinxExample" */;
+			buildPhases = (
+				935684EA255CD0AD00819EF1 /* Sources */,
+				935684EB255CD0AD00819EF1 /* Frameworks */,
+				935684EC255CD0AD00819EF1 /* Resources */,
+				9356867E255D15E800819EF1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9356867D255D15E800819EF1 /* PBXTargetDependency */,
+			);
+			name = CSSphinxExample;
+			productName = CSSphinxExample;
+			productReference = 935684EE255CD0AD00819EF1 /* CSSphinxExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		935684C5255CD09900819EF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					935684CD255CD09900819EF1 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					935684D6255CD09900819EF1 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					935684ED255CD0AD00819EF1 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 935684C8255CD09900819EF1 /* Build configuration list for PBXProject "CSSphinx" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 935684C4255CD09900819EF1;
+			productRefGroup = 935684CF255CD09900819EF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				935684CD255CD09900819EF1 /* CSSphinx */,
+				935684D6255CD09900819EF1 /* CSSphinxTests */,
+				935684ED255CD0AD00819EF1 /* CSSphinxExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		935684CC255CD09900819EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935684D5255CD09900819EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935684EC255CD0AD00819EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93568500255CD0AF00819EF1 /* LaunchScreen.storyboard in Resources */,
+				022DE2B8260A492000400162 /* model in Resources */,
+				935684FD255CD0AF00819EF1 /* Assets.xcassets in Resources */,
+				935684FB255CD0AD00819EF1 /* Main.storyboard in Resources */,
+				933F9A6325626D3800442820 /* Audio in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		935684CA255CD09900819EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93568643255D045800819EF1 /* CSHypothesis.m in Sources */,
+				9356868A255D16F600819EF1 /* CSSpeechRecognizer.m in Sources */,
+				9356863C255CD8A000819EF1 /* CSSphinxDecoder.m in Sources */,
+				933F9A57256265BB00442820 /* CSLanguageModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935684D3255CD09900819EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				935684DD255CD09900819EF1 /* CSSphinxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935684EA255CD0AD00819EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933F9A512562652900442820 /* CSSpeechViewController.m in Sources */,
+				935684F2255CD0AD00819EF1 /* AppDelegate.m in Sources */,
+				93568503255CD0AF00819EF1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		935684DA255CD09900819EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 935684CD255CD09900819EF1 /* CSSphinx */;
+			targetProxy = 935684D9255CD09900819EF1 /* PBXContainerItemProxy */;
+		};
+		9356867D255D15E800819EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 935684CD255CD09900819EF1 /* CSSphinx */;
+			targetProxy = 9356867C255D15E800819EF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		935684F9255CD0AD00819EF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				935684FA255CD0AD00819EF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		935684FE255CD0AF00819EF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				935684FF255CD0AF00819EF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		935684E0255CD09900819EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		935684E1255CD09900819EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		935684E3255CD09900819EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73M2YS689D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CSSphinx/Sphinx/include/**";
+				INFOPLIST_FILE = CSSphinx/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CSSphinx/Sphinx/lib/**",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcsaaron.CSSphinx;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		935684E4255CD09900819EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73M2YS689D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CSSphinx/Sphinx/include/**";
+				INFOPLIST_FILE = CSSphinx/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CSSphinx/Sphinx/lib/**",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcsaaron.CSSphinx;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		935684E6255CD09900819EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73M2YS689D;
+				INFOPLIST_FILE = CSSphinxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcsaaron.CSSphinxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		935684E7255CD09900819EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73M2YS689D;
+				INFOPLIST_FILE = CSSphinxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcsaaron.CSSphinxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93568505255CD0AF00819EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73M2YS689D;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CSSphinxExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcsaaron.CSSphinxExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93568506255CD0AF00819EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73M2YS689D;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CSSphinxExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcsaaron.CSSphinxExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		935684C8255CD09900819EF1 /* Build configuration list for PBXProject "CSSphinx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935684E0255CD09900819EF1 /* Debug */,
+				935684E1255CD09900819EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935684E2255CD09900819EF1 /* Build configuration list for PBXNativeTarget "CSSphinx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935684E3255CD09900819EF1 /* Debug */,
+				935684E4255CD09900819EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		935684E5255CD09900819EF1 /* Build configuration list for PBXNativeTarget "CSSphinxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935684E6255CD09900819EF1 /* Debug */,
+				935684E7255CD09900819EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93568504255CD0AF00819EF1 /* Build configuration list for PBXNativeTarget "CSSphinxExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93568505255CD0AF00819EF1 /* Debug */,
+				93568506255CD0AF00819EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 935684C5255CD09900819EF1 /* Project object */;
+}

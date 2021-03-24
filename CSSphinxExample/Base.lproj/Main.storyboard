@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yLN-pY-lh6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--本地语音识别-->
+        <scene sceneID="JdA-mf-f4n">
+            <objects>
+                <viewController id="ibv-pV-uml" customClass="CSSpeechViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6la-z4-sFH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="btS-eh-Ac0">
+                                <rect key="frame" x="20" y="108" width="374" height="331.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KlH-vw-8SJ">
+                                <rect key="frame" x="20" y="459.5" width="374" height="32"/>
+                                <segments>
+                                    <segment title="zh-cn"/>
+                                    <segment title="en-us"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="ibv-pV-uml" eventType="valueChanged" id="EJN-Gd-hS4"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQh-cj-hQj">
+                                <rect key="frame" x="20" y="510.5" width="92" height="30"/>
+                                <state key="normal" title="语音文件识别"/>
+                                <connections>
+                                    <action selector="recognitionButtonClicked:" destination="ibv-pV-uml" eventType="touchUpInside" id="Ef9-1H-RVl"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Aa-Vh-znr">
+                                <rect key="frame" x="345" y="510.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="wakeupSwitchChanged:" destination="ibv-pV-uml" eventType="valueChanged" id="Ygz-CD-Q0w"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用“小安小安”唤醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dZ-bA-eJr">
+                                <rect key="frame" x="199" y="517" width="136" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2x6-xK-ll2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2x6-xK-ll2" firstAttribute="trailing" secondItem="4Aa-Vh-znr" secondAttribute="trailing" constant="20" id="1W9-Js-Svb"/>
+                            <constraint firstItem="HQh-cj-hQj" firstAttribute="top" secondItem="KlH-vw-8SJ" secondAttribute="bottom" constant="20" id="3EI-Ws-1X4"/>
+                            <constraint firstItem="KlH-vw-8SJ" firstAttribute="top" secondItem="btS-eh-Ac0" secondAttribute="bottom" constant="20" id="IAx-Dl-eYg"/>
+                            <constraint firstItem="5dZ-bA-eJr" firstAttribute="centerY" secondItem="4Aa-Vh-znr" secondAttribute="centerY" id="N94-HC-yLS"/>
+                            <constraint firstItem="4Aa-Vh-znr" firstAttribute="leading" secondItem="5dZ-bA-eJr" secondAttribute="trailing" constant="10" id="S6L-gH-IX5"/>
+                            <constraint firstItem="btS-eh-Ac0" firstAttribute="leading" secondItem="2x6-xK-ll2" secondAttribute="leading" constant="20" id="Swz-ck-tPd"/>
+                            <constraint firstItem="HQh-cj-hQj" firstAttribute="leading" secondItem="2x6-xK-ll2" secondAttribute="leading" constant="20" id="W1m-aA-frP"/>
+                            <constraint firstItem="2x6-xK-ll2" firstAttribute="trailing" secondItem="btS-eh-Ac0" secondAttribute="trailing" constant="20" id="WD0-Gf-WRb"/>
+                            <constraint firstItem="KlH-vw-8SJ" firstAttribute="leading" secondItem="2x6-xK-ll2" secondAttribute="leading" constant="20" id="YRb-N3-5Ub"/>
+                            <constraint firstItem="2x6-xK-ll2" firstAttribute="trailing" secondItem="KlH-vw-8SJ" secondAttribute="trailing" constant="20" id="Yu7-ht-4X8"/>
+                            <constraint firstItem="btS-eh-Ac0" firstAttribute="top" secondItem="2x6-xK-ll2" secondAttribute="top" constant="20" id="hMs-N0-Kle"/>
+                            <constraint firstItem="KlH-vw-8SJ" firstAttribute="centerY" secondItem="2x6-xK-ll2" secondAttribute="centerY" id="q51-Tm-y4j"/>
+                            <constraint firstItem="4Aa-Vh-znr" firstAttribute="top" secondItem="KlH-vw-8SJ" secondAttribute="bottom" constant="20" id="wdA-wU-3tl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="本地语音识别" id="KeO-Xk-2iK">
+                        <barButtonItem key="leftBarButtonItem" title="Start" id="fHp-Tb-HjH">
+                            <connections>
+                                <action selector="startButtonClicked:" destination="ibv-pV-uml" id="s2X-D7-Fqe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Stop" id="xv0-Ws-5u0">
+                            <connections>
+                                <action selector="stopButtonClicked:" destination="ibv-pV-uml" id="d6g-5n-qU8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="recognizitionButton" destination="HQh-cj-hQj" id="EYa-jJ-ZnK"/>
+                        <outlet property="segment" destination="KlH-vw-8SJ" id="t4f-rh-BZI"/>
+                        <outlet property="startButtonItem" destination="fHp-Tb-HjH" id="rdD-QS-9a6"/>
+                        <outlet property="stopButtonItem" destination="xv0-Ws-5u0" id="Uan-1E-aR4"/>
+                        <outlet property="textView" destination="btS-eh-Ac0" id="ebx-3V-VZu"/>
+                        <outlet property="wakeupLabel" destination="5dZ-bA-eJr" id="4zs-iO-AsO"/>
+                        <outlet property="wakeupSwitch" destination="4Aa-Vh-znr" id="Pcg-mo-Qn7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wg7-XC-XvU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="107.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CnN-8v-eod">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yLN-pY-lh6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ldI-zi-YVv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ibv-pV-uml" kind="relationship" relationship="rootViewController" id="bB9-RL-lbz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qha-d7-tYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
