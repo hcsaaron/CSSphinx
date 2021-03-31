@@ -70,10 +70,8 @@ typedef enum : NSUInteger {
     
     [self startRecordAndReturnError:error receive:^(CSHypothesis * _Nullable hypothesis, BOOL isLast) {
         
-        if ([hypothesis.text isEqualToString:keyword]) {
-            if (completion) {
-                completion();
-            }
+        if ([hypothesis.text isEqualToString:keyword] && completion) {
+            completion();
         }
         
     } stateChanged:nil];
@@ -219,7 +217,7 @@ typedef enum : NSUInteger {
     if (languageModel != _languageModel) {
         _languageModel = languageModel;
         
-        _decoder = [[CSSphinxDecoder alloc] initWithHmm:self.languageModel.hmmPath lm:self.languageModel.lmPath dict:self.languageModel.dictPath];
+        self.decoder = [[CSSphinxDecoder alloc] initWithHmm:self.languageModel.hmmPath lm:self.languageModel.lmPath dict:self.languageModel.dictPath];
     }
 }
 
