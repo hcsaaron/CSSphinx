@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		93E265182611BE5A00ABADCF /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 93E2651B2611BE5A00ABADCF /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				93E2651F2611BE5F00ABADCF /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		022DE2B8260A492000400162 /* model in Resources */ = {isa = PBXBuildFile; fileRef = 022DE2B7260A492000400162 /* model */; };
 		933F9A512562652900442820 /* CSSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F9A502562652900442820 /* CSSpeechViewController.m */; };
@@ -515,6 +529,9 @@
 					935684ED255CD0AD00819EF1 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
+					93E265182611BE5A00ABADCF = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 935684C8255CD09900819EF1 /* Build configuration list for PBXProject "CSSphinx" */;
@@ -533,6 +550,7 @@
 				935684CD255CD09900819EF1 /* CSSphinx */,
 				935684D6255CD09900819EF1 /* CSSphinxTests */,
 				935684ED255CD0AD00819EF1 /* CSSphinxExample */,
+				93E265182611BE5A00ABADCF /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -565,6 +583,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93E2651F2611BE5F00ABADCF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ~/.bash_profile\nexport LC_ALL=\"en_US.UTF-8\"\n\nprojectName=\"CSSphinx.xcodeproj\"\ntargetName=\"CSSphinxExample\"\n\ncd ${SRCROOT}\nrm -rf ./build/derivedData\n\nxcodebuild clean -UseModernBuildSystem=NO\n\nxcodebuild -project ${projectName} -scheme ${targetName} -UseModernBuildSystem=NO -derivedDataPath ./build/derivedData -configuration Debug COMPILER_INDEX_STORE_ENABLE=NO | xcpretty -r json-compilation-database -o compile_commands.json\n\noclint-json-compilation-database -e CSSphinx/Sphinx -- -report-type html -o oclintReport.html \\\n-rc=LONG_VARIABLE_NAME=40 \\\n-rc=LONG_LINE=200 \\\n-rc=LONG_METHOD=100 \\\n-rc=NCSS_METHOD=60 \\\n-rc=CYCLOMATIC_COMPLEXITY=20 \\\n-rc=TOO_MANY_METHODS=60 \\\n-disable-rule UnusedMethodParameter \\\n-disable-rule ParameterReassignment \\\n-disable-rule TooFewBranchesInSwitchStatement \\\n-disable-rule ShortVariableName \\\n-max-priority-1=9999 \\\n-max-priority-2=9999 \\\n-max-priority-3=9999 \\\n\nexit\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		935684CA255CD09900819EF1 /* Sources */ = {
@@ -883,6 +921,24 @@
 			};
 			name = Release;
 		};
+		93E265192611BE5A00ABADCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73M2YS689D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93E2651A2611BE5A00ABADCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73M2YS689D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -918,6 +974,15 @@
 			buildConfigurations = (
 				93568505255CD0AF00819EF1 /* Debug */,
 				93568506255CD0AF00819EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E2651B2611BE5A00ABADCF /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E265192611BE5A00ABADCF /* Debug */,
+				93E2651A2611BE5A00ABADCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
