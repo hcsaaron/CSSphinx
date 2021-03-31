@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/hcsaaron/CSSphinx"
   s.author       = { "Aaron" => "hcsaaron@163.com" }
 
-  s.source       = { :git => "https://github.com/hcsaaron/CSSphinx.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/hcsaaron/CSSphinx.git", :tag => s.version.to_s }
   s.source_files = "CSSphinx/**/*.{h,m}"
   s.resources 	 = 'CSSphinx/Sphinx/**/*'
 
